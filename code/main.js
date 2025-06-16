@@ -46,6 +46,13 @@ document.addEventListener('keyup', (e) => {
   if (e.code === 'KeyE') lidarActive = false;
 });
 
+document.addEventListener('mousedown', (e) => {
+  lidarActive = true;
+});
+document.addEventListener('mouseup', (e) => {
+  lidarActive = false;
+});
+
 // Animate
 function animate() {
   requestAnimationFrame(animate);
