@@ -6,9 +6,12 @@ import { createTrimesh } from '../physics/trimesh.js';
 import { world, defaultMaterial } from '../physics/world.js';
 
 export function loadModel(scene, modelFile) {
+
+  console.log(modelFile);
+  if(modelFile===undefined){return;}
   const loader = new GLTFLoader();
   loader.load(
-    `../models/${modelFile}`,
+    modelFile,
     (gltf) => {
       const model = gltf.scene;
       scene.add(model);
