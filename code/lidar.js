@@ -27,7 +27,7 @@ const pointMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.04, si
 const lidarPointCloud = new THREE.Points(pointGeometry, pointMaterial);
 scene.add(lidarPointCloud);
 
-export function scanLidar(origin, direction, spread = 0.5, raysPerShot = 20, maxDistance = 100) {
+export function scanLidar(origin, direction, spread = 0.5, raysPerShot = 20, maxDistance = 400) {
   const points = [];
 
   const offset = new THREE.Vector3();

@@ -29,7 +29,7 @@ scene.add(lidarPointsGroup);
 const composer = new EffectComposer(renderer);
 const renderPass = new RenderPass(scene, camera);
 const chromaticAberration = new ChromaticAberrationEffect({
-  offset: new THREE.Vector2(0.0003, 0.0003), // tweak this
+  offset: new THREE.Vector2(0.00024, 0.00024), // tweak this
 });
 const effectPass = new EffectPass(camera, chromaticAberration);
 
