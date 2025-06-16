@@ -40,10 +40,10 @@ let lidarActive = false;
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space') tryJump();
-  if (e.code === 'KeyL') lidarActive = true;
+  if (e.code === 'KeyE') lidarActive = true;
 });
 document.addEventListener('keyup', (e) => {
-  if (e.code === 'KeyL') lidarActive = false;
+  if (e.code === 'KeyE') lidarActive = false;
 });
 
 // Animate
