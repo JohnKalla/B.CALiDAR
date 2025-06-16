@@ -47,17 +47,21 @@
     #main-menu h1 {
       color: white;
       margin-bottom: 20px;
+      font-size: 1.4em;
+      font-family: sans-serif;
+      font-weight: bold;
+      letter-spacing: 4px;
     }
 
     .menu-button {
       padding: 12px 24px;
       margin: 10px;
-      font-size: 1.2em;
+      font-size: 2em;
       cursor: pointer;
       background-color: #222;
       color: white;
-      border: 2px solid white;
-      border-radius: 8px;
+      border: 0px solid white;
+      border-radius: 0px;
       transition: all 0.2s ease;
     }
 
@@ -70,10 +74,10 @@
 <body>
   <button onclick = "window.location.href = '/B.CALiDAR/'"> X </button>
   <div id="main-menu">
-    <h1>B.CALiDAR</h1>
+    <h1>B.CALiDAR, a game</h1>
     <button class="menu-button" data-map="/B.CALiDAR/models/model_20.glb">EXPLORE1</button>
     <button class="menu-button" data-map="/B.CALiDAR/models/chess_2.glb">EXPLORE2</button>
-    <button class="menu-button" data-map="/B.CALiDAR/models/room.glb">ROOM</button>
+    <button class="menu-button" data-map="/B.CALiDAR/models/room.glb">EXPLORE3</button>
   </div>
   <script type="module" src="code/main.js"></script>
 </body>
